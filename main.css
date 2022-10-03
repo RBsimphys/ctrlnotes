@@ -1,0 +1,94 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 19, 2);
+    min-height: 100vh;
+}
+
+.main{
+    display: flex;
+    width: 95vw;
+    height: 90vh;
+    background-color: white;
+    /* border-top: solid goldenrod 20px;
+    border-left: solid goldenrod 20px;
+    border-bottom: solid rgb(102, 76, 11) 20px;
+    border-right: solid rgb(161, 121, 20)  20px; */
+}
+
+/* left side - picture and logo */
+.navigator{
+    flex: 60% 0 2;
+    background-image: url('/Logo.jpg');
+    background-size: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    opacity: 70%;
+}
+
+
+/* right side - input and form title */
+.signupForm{
+    background-color: #d6bf70;
+    align-items: center;
+    flex: 40% 0 1;
+    padding: 20px;
+    line-height: 1.5;
+
+}
+
+.form__title{
+    font-size: 3em;
+    font-weight: 700;
+    color: #816d44;
+}
+
+
+.form__label{
+    color: #816d44;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.form__item{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__password{
+    display: flex;
+    gap: 10px;
+}
+
+
+.form__input{
+    -webkit-appearance: none;
+    width: 60%;
+    padding: 10px;
+    font-size: 1.5;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.form__input:focus{
+    border: solid 2px #816d44;
+}
+
+.pass_input{
+    width: 100%;
+}
+
+
